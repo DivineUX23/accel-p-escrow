@@ -3,11 +3,11 @@ use pinocchio::{AccountView, Address, error::ProgramError};
 #[repr(C)]
 #[derive(Clone, Copy, Debug, Default, PartialEq)]
 pub struct Escrow {
-    maker: [u8; 32],
-    mint_a: [u8; 32],
-    mint_b: [u8; 32],
-    amount_to_receive: [u8; 8],
-    amount_to_give: [u8; 8],
+    pub maker: [u8; 32],
+    pub mint_a: [u8; 32],
+    pub mint_b: [u8; 32],
+    pub amount_to_receive: [u8; 8],
+    pub amount_to_give: [u8; 8],
     pub bump: u8,
 }
 
